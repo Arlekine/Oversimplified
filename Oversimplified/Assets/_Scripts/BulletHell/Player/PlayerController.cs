@@ -5,13 +5,27 @@ using UnityEngine;
 
 namespace BulletHell
 {
-    public class PlayerControl : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         [SerializeField] private MovementBehaviour movementBehaviour;
+        [SerializeField] private Health health;
 
         private void Awake()
         {
             movementBehaviour.SetTarget(transform);
+
+            health.onTakeDamage += PlayerDamaged;
+            health.onHealthEnd += PlayerDeath;
+        }
+
+        private void PlayerDamaged(int currentHealth)
+        {
+            Debug.Log("Damaged: " + currentHealth);
+        }
+
+        private void PlayerDeath()
+        {
+            Debug.Log("Player dead");
         }
 
         private void Update()
