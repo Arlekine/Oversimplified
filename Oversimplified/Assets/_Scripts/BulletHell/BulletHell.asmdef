@@ -1,0 +1,16 @@
+{
+    "name": "BulletHell",
+    "references": [
+        "GUID:baa6fb0cb1b050d4897fe94084e84426",
+        "GUID:322a692161bf45f4488df48fdc11a92c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
